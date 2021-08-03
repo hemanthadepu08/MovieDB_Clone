@@ -1,0 +1,36 @@
+.rate-wrapper{
+    background: #0d5c1f;
+    font-size: 12px;
+    padding: .5rem;
+    color: #fff;
+    border-radius: 50%;
+}
+.percentage{
+    height: 35px;
+    background: red;
+    border-radius: 50%;
+    width: 35px;
+    display: inline-block;
+}
+.percentage::before{
+    content: "";
+    background: transparent;
+}
+.CircularProgressbar .CircularProgressbar-path {
+    stroke: #1FBA6E !important;
+}
+.movies-info p:first-child{
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.movies-info p:last-child{
+    font-size: 0.85rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.movies-info{
+    max-width: 150px;
+}
+  

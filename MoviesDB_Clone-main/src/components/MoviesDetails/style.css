@@ -1,0 +1,142 @@
+
+.movie-infos{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2rem;
+    color: #fff;
+    padding: 2rem 0;
+    background-image: linear-gradient(to right, rgba(8.24%, 9.41%, 9.80%, 1.00) 150px, rgba(8.24%, 9.41%, 9.80%, 0.84) 100%);
+}
+.movie-infos .right{
+    width: 63%;
+}
+.bg-image{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+}
+.progrees-bar:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.button-content button{
+    background: #032541;
+    color: #fff;
+    border: none;
+    margin-left: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.react-player{
+    position: fixed;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.close-button{
+    display: none;
+    position: fixed;
+    margin: 0 auto;
+    color: #fff;
+    top: 1.6rem;
+    background: #000;
+    left: 50%;
+    width: 50%;
+    height: 3rem;
+    transform: translateX(-50%);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+.close-button.active{
+    display: flex;
+}
+.close-button.active i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.close-button button{
+    border: none;
+    background: unset;
+    outline: none;
+}
+.profile-info{
+    width: 140px;
+    line-height: 1;
+    height: 100px;
+    padding: 0.5rem;
+}
+.social-media-wrapper a:not(:hover){
+    color: #000;
+}
+
+@media screen and (max-width:767px) {
+    .cast-wrapper{
+        max-width: 90% !important;
+    }
+    .movies-info-wrapper{
+        display: flex;
+        margin: 1rem 0px;
+        width: 100%;
+        justify-content: center;
+    }
+    .right ul{
+        padding:0 0 0 0.4rem !important ;
+    }
+    .right .generic{
+        text-align: center;
+    }
+    .movieTitle{
+        text-align: center;
+    }
+    .button-content{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .trailer{
+        cursor: pointer;
+        font-size: 1.3rem;
+        display: inline-block;
+        flex: 50%;
+        margin-left: 1rem;
+        order: 1;
+        gap: 1rem;
+        border-left: 1px solid;
+        padding-left: 1rem;
+    }
+    nav{
+       padding:0.75rem 2rem !important
+    }
+    .collapse.active{
+        transform: translateX(-9%);
+        background: #032541;
+        padding: 1rem 2rem 2rem;
+        position: relative;
+        z-index: 1;
+        top: 0.9rem;
+        transition: transform 0.4s;
+    }
+    .collapse {
+        display: unset;
+        transform: translateX(-100%);
+    }
+    .left > img:first-child{
+        width: 200px !important;
+    }
+    .react-player{
+        width: 90% !important;
+        height: 50% !important;
+    }
+    .close-button{
+        width: 90%;
+        top:20%;
+    }
+}
